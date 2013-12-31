@@ -1,0 +1,38 @@
+user.name=zhishan
+user.email=zhishan@yahoo-inc.com
+color.branch=auto
+color.diff=auto
+color.status=auto
+color.branch.current=yellow reverse
+color.branch.local=yellow
+color.branch.remote=green
+color.diff.meta=yellow bold
+color.diff.frag=magenta bold
+color.diff.old=red bold
+color.diff.new=green bold
+color.status.added=yellow
+color.status.changed=green
+color.status.untracked=cyan
+
+$ cat ~/.gitconfig
+
+[user]
+	name = zhishan
+	email = zhishan@yahoo-inc.com
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new= green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
