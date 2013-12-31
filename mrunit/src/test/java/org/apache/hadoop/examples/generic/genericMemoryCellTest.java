@@ -1,6 +1,5 @@
 package org.apache.hadoop.examples.generic;
 
-import javafx.beans.property.adapter.JavaBeanFloatProperty;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;

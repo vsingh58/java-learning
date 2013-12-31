@@ -2,6 +2,10 @@ package org.apache.hadoop.examples.generic;
 
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
 /**
  * Created with IntelliJ IDEA.
  * User: zhishan
@@ -38,13 +42,54 @@ public class CovariantArrayType {
 	Both the assignments compile, yet arr[1] is actually referencing Circle, and the Square IS-NOT-A Circle. Thus we have
     type confusion. The compiler will not throw error ClassCastException, but it will be throwed in Runtime.
 
-	Why? In java, the arrays are type-compatible. This is known as a "covariant array type".
+	    Why? In java, the arrays are type-compatible. This is known as a "covariant array type".
 
 	    Each array keeps track of the type of object it is allowed to store. If an incompatible type is inserted into the
 	    array, the VM will throw an ArrayStoreException.
+
         * */
 
         double totalArea = WildcardwithBounds.totalArea(arr);
+        System.out.println("Shape total Area: "+ totalArea);
+    }
+
+    @Test
+    public void inheritanceAggregateTypeTest_1(){
+        Shape[] arr = { new Circle(raduis), new Square(raduis)};
+
+        double totalArea = WildcardwithBounds.totalArea(arr);
+        System.out.println("Shape total Area: "+ totalArea);
+        /*
+        * It is ok, because Circle IS-A Shape and Square IS-A Shape too. */
+    }
+
+    @Test(description = "test double totalArea(Collection<Shape> arr)")
+    public void inheritanceAggregateTypeTest_2(){
+        Collection<Square> squares = new ArrayList<Square>();
+        squares.add(new Square(raduis));
+        //squares.add(new Circle(raduis)); type not compatible, not applied
+        squares.add(new Square(raduis));
+
+        double totalArea = WildcardwithBounds.totalArea(squares);
+
+        System.out.println("Shape total Area: "+ totalArea);
+    }
+
+    /*
+    *
+    * The convariance of arrays leads to code that compiles but then generates a runtime exception(an ArrayStoreException).
+	* Because the entire reason to have generics is to generate compiler error rather than runtime exceptions for type mismatches,
+	* generic collections are not covariant.
+	*
+	*/
+    @Test(description = "test double totalArea(Collection<? extends Shape> arr)")
+    public void inheritanceAggregateTypeTest_3(){
+        Collection<Square> squares = new ArrayList<Square>();
+        squares.add(new Square(raduis));
+        //squares.add(new Circle(raduis)); type not compatible, not applied
+        squares.add(new Square(raduis));
+
+        double totalArea = WildcardwithBounds.totalArea(squares);
         System.out.println("Shape total Area: "+ totalArea);
     }
 

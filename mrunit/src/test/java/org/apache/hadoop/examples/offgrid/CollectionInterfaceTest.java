@@ -54,6 +54,6 @@ public class CollectionInterfaceTest {
             iterator.remove();
             System.out.println(temp);
         }
-        Assert.assertEquals(true, false);
+        //Assert.assertEquals(true, false);
     }
 }

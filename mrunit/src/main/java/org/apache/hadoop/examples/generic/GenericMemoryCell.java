@@ -37,5 +37,30 @@ public class GenericMemoryCell <Anytype> {
     public void write(Anytype x){
         storedValue = x;
     }
+
+    /* declared as public static boolean contains(Anytpe [] arr, Anytpe x){
+    will get below compiler error.
+    * could not parse error message:   symbol:   class Anytpe
+  location: class StaticMethod<Anytype>
+  where Anytype is a type-variable:
+    Anytype extends Object declared in class StaticMethod
+/home/zhishan/workspace/git/java-learning/mrunit/src/main/java/org/apache/hadoop/examples/generic/StaticMethod.java:12: error: cannot find symbol
+    public static boolean contains(Anytpe [] arr, Anytpe x){
+*/
+
+//    public static <Anytpe> boolean contains(Anytype [] arr, Anytype x){
+//        for(Anytype val : arr){
+//            if ( x.equals(val)){
+//                System.out.println("Contain elem: " + x);
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+    /*
+    * In a generic class, static methods and field cannot refer to the class type variable since,
+    *
+    * */
+
 }
 

@@ -1,5 +1,7 @@
 package org.apache.hadoop.examples.generic;
 
+import java.util.Collection;
+
 /**
  * Created with IntelliJ IDEA.
  * User: zhishan
@@ -9,6 +11,32 @@ package org.apache.hadoop.examples.generic;
  */
 public class WildcardwithBounds {
     public static double totalArea(Shape [] arr){
+        double total = 0;
+        for(Shape s : arr){
+            if(s!=null){
+                total += s.getArea();
+            }
+        }
+        return total;
+    }
+                     /*
+                    * It does not work if passed a Collection<Square>
+                    * And it is as same as totalArea(Collection <? extends Shape> arr) type Erasure.
+    public static double totalArea(Collection<Shape> arr){
+        double total = 0;
+        for(Shape s : arr){
+            if(s!=null){
+                total += s.getArea();
+            }
+        }
+        return total;
+    }
+    */
+
+    // works if passed a Collection<Square>
+    //public static double totalArea(Collection <Shape> arr)
+    public static double totalArea(Collection <? extends  Shape> arr){
+
         double total = 0;
         for(Shape s : arr){
             if(s!=null){
