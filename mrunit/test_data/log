@@ -1,0 +1,48 @@
+>sed 's/ /\n/g' input.data  | sort | uniq -c | sort -k1,1nr 
+      2 to
+      1 a
+      1 and/or
+      1 artifacts
+      1 artifacts.
+      1 can
+      1 capability
+      1 copy
+      1 dependency
+      1 from
+      1 It
+      1 local
+      1 location.
+      1 manipulate
+      1 or
+      1 plugin
+      1 provides
+      1 remote
+      1 repositories
+      1 specified
+      1 the
+      1 The
+      1 unpack
+>hadoop fs -text /user/zhishan/output/part-r-00000
+It	1
+The	1
+a	1
+and/or	1
+artifacts	1
+artifacts.	1
+can	1
+capability	1
+copy	1
+dependency	1
+from	1
+local	1
+location.	1
+manipulate	1
+or	1
+plugin	1
+provides	1
+remote	1
+repositories	1
+specified	1
+the	1
+to	2
+unpack	1
