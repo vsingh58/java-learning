@@ -31,17 +31,30 @@ public class RestrictionsOnGenerics <T> {
         this.m =  (T)new Object(); // this could help avoid "Restrictions On Generics, 4th"
         m = ipT;
     }
+    RestrictionsOnGenerics(){};
 
     public T getter(){
         return m;
     }
 
-    public T[] getArray(T [] matrics){
+    public <T> T[] getArray(T [] matrics){
+        System.out.println("Enter getArray");
 //        T[] tmp = new T[matric.length];
         T [] tmp = (T[]) new Object[matrics.length];
+        //T [] tmp = new T[matrics.length];
+        // error java: generic array creation
+
         System.arraycopy(matrics,0,tmp,0,matrics.length);
 
         return tmp;
+        /* log
+        Enter getArray
+Exception in thread "main" java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.Intege
+
+It seems that error occurs at "T [] tmp = (T[]) new Object[matrics.length];"
+Class not compatible.
+
+        */
     }
 
     public static void main(String[] args){
@@ -55,10 +68,24 @@ public class RestrictionsOnGenerics <T> {
         System.out.println(generics.getter());
 
         // this is the correct usage;
+        RestrictionsOnGenerics<Integer> generics1 = new RestrictionsOnGenerics<>(integer);
+        System.out.println("1. " +generics1.getter());
+//        generics1 = new RestrictionsOnGenerics<String>(str);    error
+
+        generics1 = new RestrictionsOnGenerics(str); // unchecked assignment
+        System.out.println("1. " + generics1.getter());
 
         RestrictionsOnGenerics<String> generics2 = new RestrictionsOnGenerics<>(str);
-        System.out.println(generics2.getter());
+        System.out.println("2. " + generics2.getter());
 
+        Integer[] arr={1, 2, 3};
+        Integer[] tmp;
 
+// runtime error:
+// Exception in thread "main" java.lang.ClassCastException:
+// [Ljava.lang.Object; cannot be cast to [Ljava.lang.Integer
+        tmp= new RestrictionsOnGenerics<Integer>().getArray(arr);
+        for (int i : arr)
+            System.out.println("[" + "]= "  + i);
     }
 }
