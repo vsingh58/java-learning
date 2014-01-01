@@ -41,7 +41,7 @@ public class GenericMemoryCell <Anytype> {
     /* declared as public static boolean contains(Anytpe [] arr, Anytpe x){
     will get below compiler error.
     * could not parse error message:   symbol:   class Anytpe
-  location: class StaticMethod<Anytype>
+  location: class GenericStaticMethod<Anytype>
   where Anytype is a type-variable:
     Anytype extends Object declared in class StaticMethod
 /home/zhishan/workspace/git/java-learning/mrunit/src/main/java/org/apache/hadoop/examples/generic/StaticMethod.java:12: error: cannot find symbol

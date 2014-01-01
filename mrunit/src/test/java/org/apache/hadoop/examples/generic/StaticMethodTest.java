@@ -24,7 +24,7 @@ public class StaticMethodTest {
         logger.error("JDK7, Contents are: " + val);
 
         Integer[] integers = {1, 5, 10, 9, 17};
-        boolean flag = StaticMethod.contains(integers, 5);
+        boolean flag = StaticMethod.<Integer>contains(integers, 5);
         if(flag){
             logger.error("true");
         }

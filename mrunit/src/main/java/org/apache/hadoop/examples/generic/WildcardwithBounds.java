@@ -60,3 +60,11 @@ public class WildcardwithBounds {
         System.out.println("Shape total Area: "+ totalArea);
     }
 }
+
+
+/*
+Geneiric class are converted by the compiler to nongeneric classes by a process known as "type erasure".
+*If a geneirc class is used without a type parameter, the raw class is used.
+*
+* The significant benefit is that the programmer does not have to place casts in the code, and the compiler will do significant type checking.
+*  */

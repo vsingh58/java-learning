@@ -18,6 +18,28 @@ public class StaticMethod {
         }
         return false;
     }
+    public static <E> void print(E[] list){
+        for(int i=0; i< list.length; i++){
+            System.out.println(list[i] + " ") ;
+        }
+        System.out.println();
+    }
+
+    public static void main(String [] args) {
+        Integer[] integers = {1, 2, 3, 4, 5};
+        String[] strings = {"London", "Pairs", "New York", "Austin"};
+        StaticMethod.<Integer>print(integers);
+        StaticMethod.<String>print(strings);
+
+        StaticMethod.contains(integers,"5"); // it is not work and without any errors are raised on both compiler and Runtime.
+        System.out.println("*** Main end*** ");
+        //StaticMethod.<Integer>contains(integers,"5");
+        /*StaticMethod.<Integer>contains(integers,"5");
+        * Compilation failure:
+        * reason: actual argument java.lang.String cannot be converted to java.lang.Integer by method invocation conversion.
+        * */
+
+    }
 }
 
 /* It is same as the Arrays.java
@@ -51,3 +73,16 @@ public class StaticMethod {
             return a;
         }
 * */
+
+
+/**
+ * Generic static method declare in a non-generic class
+ * class non-generic-class-Name{
+ *     public static <T> returnType static-generic-Function(<T> inputParameter)
+ * }
+ *
+ * Invoke an non-generic class' static-generic method
+ *  non-generic-class-Name.<inputType>static-generic-Function(input)
+ *
+ *  REASON: type erasure.
+ * */
