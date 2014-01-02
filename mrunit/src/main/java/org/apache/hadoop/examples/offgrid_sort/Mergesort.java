@@ -1,4 +1,6 @@
-package org.apache.hadoop.examples.offgrid;
+package org.apache.hadoop.examples.offgrid_sort;
+
+import java.util.Arrays;
 
 /**
  * Created with IntelliJ IDEA.
@@ -76,6 +78,10 @@ public class Mergesort {
 //        for(int tmp: iarr)
 //            System.out.println(tmp);
         System.out.println("**** end ****");
+        Integer [] iArray1 = {13,1, 24, 26, 2, 15, 27, 38};
+        Arrays.sort(iArray1);
+        printArray(iArray1);
+
     }
 
     private static void printArray(Integer[] iArray) {

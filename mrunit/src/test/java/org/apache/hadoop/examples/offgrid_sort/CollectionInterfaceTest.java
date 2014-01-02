@@ -1,6 +1,5 @@
-package org.apache.hadoop.examples.offgrid;
+package org.apache.hadoop.examples.offgrid_sort;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.Iterator;
