@@ -82,26 +82,4 @@ public class BinarySort {
             System.out.println(i);
         }
     }
-
-    /**
-     * Created with IntelliJ IDEA.
-     * User: zhishan
-     * Date: 1/2/14
-     * Time: 6:12 AM
-     * To change this template use File | Settings | File Templates.
-     */
-    public static class StraightInsertSort {
-
-        // ascending sort
-        public static <T> void insertSort(T [] rawArray){
-            for(int i=0; i < rawArray.length; i++)
-            {
-                T tmp = rawArray[i];
-                for(int j = i+1; j < rawArray.length; j++ ){
-                    if()
-                }
-            }
-
-        }
-    }
 }
