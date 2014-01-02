@@ -7,7 +7,7 @@ package org.apache.hadoop.examples.offgrid_sort;
  * Time: 8:43 AM
  * To change this template use File | Settings | File Templates.
  */
-public class SelectioinSort  {
+public class SelectionSort {
     public static <T extends  Comparable< ? super  T> >
     void selectSort( T rawArray[]) {
         for(int outer =0; outer < rawArray.length -1; outer ++ ){
@@ -25,7 +25,7 @@ public class SelectioinSort  {
     }
     public static void main(String [] args){
         Integer [] iArray = {13,1, 24, 26, 2, 15, 27, 38};
-        SelectioinSort.<Integer>selectSort(iArray);
+        SelectionSort.<Integer>selectSort(iArray);
         printArray(iArray);
     }
     private static <T>
