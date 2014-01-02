@@ -11,7 +11,7 @@ public class BubbleSort {
 
     public static <T extends Comparable<? super T>>
     void bubbleSort( T[] rawArr){
-        for(int outer=rawArr.length -1 ; outer>1; outer--){       // outer loop (backward)
+        for(int outer= rawArr.length -1 ; outer>1; outer--){       // outer loop (backward)
             for(int inner=0; inner<outer; inner++){               // inner loop (forward)
                 if ( rawArr[inner].compareTo(rawArr[inner+1])>0){
                     T tmp = rawArr[inner];
@@ -25,7 +25,7 @@ public class BubbleSort {
     }
 
     public static void main(String [] args){
-        Integer [] iArray = {13,1, 24, 26, 2, 15, 27, 38};
+        Integer [] iArray = {13,1, 24, 26, 2, 15, 38,27};
         BubbleSort.<Integer>bubbleSort(iArray);
         printArray(iArray);
     }

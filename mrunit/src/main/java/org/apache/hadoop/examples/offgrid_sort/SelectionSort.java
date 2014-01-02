@@ -24,7 +24,7 @@ public class SelectionSort {
         }
     }
     public static void main(String [] args){
-        Integer [] iArray = {13,1, 24, 26, 2, 15, 27, 38};
+        Integer [] iArray = {13,1, 24, 26, 2, 15, 38,27};
         SelectionSort.<Integer>selectSort(iArray);
         printArray(iArray);
     }
