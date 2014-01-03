@@ -14,10 +14,11 @@ public class SelectionSort {
 
             int min = outer;
             for( int inner = outer + 1; inner < rawArray.length; inner++){
-                if( rawArray[min].compareTo(rawArray[inner]) > 0 ){
-                    min = inner;
+                if( rawArray[min].compareTo(rawArray[inner]) > 0 ){    // if min  greater,
+                    min = inner;                                       // we have a new min
                 }
             }
+            // swip them
             T temp = rawArray[outer];
             rawArray[outer] = rawArray[min];
             rawArray[min]=temp;
