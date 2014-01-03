@@ -16,6 +16,9 @@
 
     <repositories>
         <repository>
+            <!--when i in company-->
+        <!--[WARNING] repository metadata for: 'artifact org.apache.maven.plugins:maven-enforcer-plugin' could not be retrieved from repository: maven-net-cn due to an error: Authorization failed: Access denied to:
+        http://maven.net.cn/content/groups/public/org/apache/maven/plugins/maven-enforcer-plugin/maven-metadata.xml-->
             <id>maven-net-cn</id>
             <name>Maven China Mirror</name>
             <url>http://maven.net.cn/content/groups/public/</url>

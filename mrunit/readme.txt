@@ -88,3 +88,19 @@ http://etfdevlab.blogspot.com/2010/10/assembly-executable-jar-with.html
                         </executions>
                     </plugin>
 
+4. maven-enforcer-plugin
+
+The Enforcer plugin provides goals to control certain environmental
+constraints such as Maven version, JDK version and OS family along with many
+more standard rules and user created rules.
+
+$ mvn enforcer:display-info
+...
+[INFO]    task-segment: [enforcer:display-info]
+[INFO]
+------------------------------------------------------------------------
+[INFO] [enforcer:display-info {execution: default-cli}]
+[INFO] Maven Version: 2.2.1
+[INFO] JDK Version: 1.7.0_13 normalized as: 1.7.0-13
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version:
+2.6.32-220.4.2.el6.yahoo.20120217.x86_64
