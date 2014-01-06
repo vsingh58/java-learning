@@ -1,0 +1,7 @@
+https://fedoraproject.org/wiki/Upgrading_Fedora_using_yum?rd=YumUpgradeFaq#Fedora_19_-.3E_Fedora_20
+
+
+Fedora 19 -> Fedora20
+# rpm --import https://fedoraproject.org/static/246110C1.txt
+# yum update yum
+# yum --releasever=20 distro-sync
