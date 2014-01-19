@@ -1,5 +1,5 @@
-user.name=zhishan
-user.email=zhishan@yahoo-inc.com
+user.name=userId
+user.email=userId@test.com
 color.branch=auto
 color.diff=auto
 color.status=auto
@@ -17,8 +17,8 @@ color.status.untracked=cyan
 $ cat ~/.gitconfig
 
 [user]
-	name = zhishan
-	email = zhishan@yahoo-inc.com
+	name = userId
+	email = userId@test.com
 [color]
     branch = auto
     diff = auto
