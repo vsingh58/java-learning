@@ -1,3 +1,7 @@
+# passwd Caching
+$ git config --global credential.helper cache
+$ git config --global credential.helper 'cache --timeout=3600'
+
 user.name=userId
 user.email=userId@test.com
 color.branch=auto
