@@ -31,6 +31,16 @@
             <!--2. add the commons-cli in the pom.xml although it has been existed as a dependency in hadoop-core-->
         </dependency>
         <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.mrunit</groupId>
             <artifactId>mrunit</artifactId>
             <version>0.9.0-incubating</version>
@@ -48,6 +58,12 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -78,9 +94,9 @@
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
-                    <fork>true</fork>
-                    <meminitial>128m</meminitial>
-                    <maxmem>512m</maxmem>
+                    <!--<fork>true</fork>-->
+                    <!--<meminitial>128m</meminitial>-->
+                    <!--<maxmem>512m</maxmem>-->
                 </configuration>
             </plugin>
             <plugin>
