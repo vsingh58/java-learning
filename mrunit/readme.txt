@@ -1,3 +1,15 @@
+cat intellij-idea.desktop 
+[Desktop Entry]
+Version=1.0
+Name=Intellij IDEA
+Comment=Develop Java Project IDE
+Exec=/home/zhishan/bin/intellijIdea/bin/idea.sh
+Terminal=false
+Icon=idea.png
+Type=Application
+Categories=Java;Development;IDE
+
+
 1. mockito: http://code.google.com/p/mockito/wiki/DeclaringMockitoDependency
       <dependency>
           <groupId>org.mockito</groupId>
