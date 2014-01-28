@@ -104,3 +104,57 @@ $ mvn enforcer:display-info
 [INFO] JDK Version: 1.7.0_13 normalized as: 1.7.0-13
 [INFO] OS Info: Arch: amd64 Family: unix Name: linux Version:
 2.6.32-220.4.2.el6.yahoo.20120217.x86_64
+
+5. maven-compiler-plugin
+5.1 Compiling Sources Using A Different JDK
+http://maven.apache.org/plugins/maven-compiler-plugin/examples/compile-using-different-jdk.html
+5.2 Compile Using Memory Allocation Enhancements
+   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <fork>true</fork>
+          <meminitial>128m</meminitial>
+          <maxmem>512m</maxmem>
+        </configuration>
+      </plugin>
+5.3 Pass Compiler Arguments
+http://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <compilerArgument>-verbose -bootclasspath ${java.home}\lib\rt.jar</compilerArgument>
+        </configuration>
+      </plugin>
+
+6. maven-enforce-plugin
+The Enforcer plugin provides goals to control certain environmental constraints such as Maven version, JDK version and OS family along with many more standard rules and user created rules.
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>1.3.1</version>
+        <executions>
+          <execution>
+            <id>enforce-versions</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>2.0.6</version>
+                </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>1.5</version>
+                </requireJavaVersion>
+                <requireOS>
+                  <family>unix</family>
+                </requireOS>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>

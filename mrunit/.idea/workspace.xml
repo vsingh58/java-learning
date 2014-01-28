@@ -1,26 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1c0b4fa-149d-48c6-9090-d71808836d9b" name="Default" comment="" />
+    <list default="true" id="a1c0b4fa-149d-48c6-9090-d71808836d9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/QuickSort.java" />
+    </list>
     <ignored path="hadoop_examples.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/WordCountMapperReducerTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388067181377" ignored="false" />
-    <file path="/a.dummy" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388032670654" ignored="false" />
+    <file path="/a.dummy" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389181384335" ignored="false" />
     <file path="/SMSCDRMapperReducerTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1387972640055" ignored="false" />
-    <file path="/fragment.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388417118025" ignored="false" />
-    <file path="/Dummy.txt" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388417118025" ignored="false" />
+    <file path="/fragment.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389174214070" ignored="false" />
+    <file path="/Dummy.txt" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390532324753" ignored="false" />
     <file path="$PROJECT_DIR$/../git/offgrid_y2s/offgrid_yuidtosid/qe/src/main/java/com/yahoo/targeting/test/func/Yuid2SidBatchModeTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388032818467" ignored="false" />
     <file path="/Yuid2SidBatchModeTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388029762788" ignored="false" />
     <file path="$PROJECT_DIR$/../DataIngestion/trunk/jaguar/dev/src/main/java/com/yahoo/slingshot/di/jaguar/normalizer/OperatorBasedJaguarMap.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388032769490" ignored="false" />
     <file path="/OperatorBasedJaguarMap.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388032718109" ignored="false" />
-    <file path="/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388048043958" ignored="false" />
-    <file path="/readme.txt" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388048264389" ignored="false" />
+    <file path="/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390881261730" ignored="false" />
+    <file path="/readme.txt" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390879762816" ignored="false" />
     <file path="/MockitoTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388042354442" ignored="false" />
-    <file path="/Mergesort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388070138233" ignored="false" />
+    <file path="/Mergesort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388639325400" ignored="false" />
     <file path="/MergesortTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388299022199" ignored="false" />
     <file path="/introduction.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388415857602" ignored="false" />
     <file path="/introductionTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388415307130" ignored="false" />
     <file path="/genericMemoryCellTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388446836800" ignored="false" />
+    <file path="/StaticMethod.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388472624738" ignored="false" />
+    <file path="/StaticMethodTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388471220881" ignored="false" />
+    <file path="/GenericMemoryCell.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388472998202" ignored="false" />
+    <file path="/FuncitonObject.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388635795840" ignored="false" />
+    <file path="/BinarySort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388641510435" ignored="false" />
+    <file path="/StraightInsertSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388643471348" ignored="false" />
+    <file path="/StraightInsertionSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388646313104" ignored="false" />
+    <file path="/BubbleSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388651820789" ignored="false" />
+    <file path="/SelectioinSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388654064043" ignored="false" />
+    <file path="/InsertionSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388735566411" ignored="false" />
+    <file path="/SelectionSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388714486402" ignored="false" />
+    <file path="/QuickSort.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388744969462" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/WildcardwithBoundsTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388746323635" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/CovariantArrayType.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388746323635" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/StaticMethodTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388746323635" ignored="false" />
+    <file path="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/genericMemoryCellTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388746323635" ignored="false" />
+    <file path="/QuickSortTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388745218432" ignored="false" />
+    <file path="$USER_HOME$/yahoo/git/offgrid_y2s/offgrid_yuidtosid/dev/src/test/java/com/yahoo/slingshot/di/utils/TestUtils.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389148603448" ignored="false" />
+    <file path="/TestUtils.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1388736653719" ignored="false" />
+    <file path="$USER_HOME$/yahoo/git/offgrid_y2s/offgrid_yuidtosid/dev/src/test/java/com/yahoo/slingshot/di/online/yuidtosid/ThriftYuidToSidProcessorTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389148603448" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/automation_test/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389148682993" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/automation_test/conf/log4j.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389148682993" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/automation_test/conf/btf-pkg-context.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389148682993" ignored="false" />
+    <file path="$USER_HOME$/yahoo/BTF_core/src/main/java/com/yahoo/backend/qe/core/TestSession.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389149124161" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/automation_test/properties/DEV/environment.properties" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389149520798" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-qe_trunk_component.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-trunk_assembly.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-trunk_component.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/oozie/workflow.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-trunk_deployment.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389178252979" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/oozie/coordinator.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389181425435" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-qe_trunk_functional_test.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/ci/slingshot_di_demo/slingshot_di_demo-qe_trunk_deployment.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164714693" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/reFactorDirectory.sh" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389164979531" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/java/com/yahoo/slingshot/di/demo/WordCount.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389166798882" ignored="false" />
+    <file path="/WordCount.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389166641792" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/java/com/yahoo/slingshot/di/demo/WordCountMapper.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389177621533" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/java/com/yahoo/slingshot/di/demo/WordCountReducer.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389177621533" ignored="false" />
+    <file path="/WordCountReducer.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389170694802" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/java/com/yahoo/slingshot/di/demo/Main.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389168750466" ignored="false" />
+    <file path="/Main.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389169047674" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/java/com/yahoo/slingshot/di/demo/WordCountMain.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389177621533" ignored="false" />
+    <file path="/WordCountMain.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389169048238" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/test/java/com/yahoo/slingshot/di/demo/PxMatchReducerTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389169292617" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/test/java/com/yahoo/slingshot/di/demo/PxMatchZ2LLMapperTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389169292617" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/test/java/com/yahoo/slingshot/di/demo/PxMatchZ2YMapperTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389169292617" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/test/java/com/yahoo/slingshot/di/demo/WordCountMapperTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389176213385" ignored="false" />
+    <file path="/WordCountMapperTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389176487652" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/main/yinst/slingshot_di_demo.yicf" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389181098134" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/src/test/java/com/yahoo/slingshot/di/demo/WordCountTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389180911381" ignored="false" />
+    <file path="/WordCountTest.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389180907172" ignored="false" />
+    <file path="$USER_HOME$/yahoo/oozie/slingshot_di_demo/script/get_start_time.sh" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389177621533" ignored="false" />
+    <file path="/coordinator.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1389181327178" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/category-lookup/dev/src/main/resources/memlookup/memLookup.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390447826978" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/category-lookup/dev/src/main/resources/tagparing/tagPairing.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390447826978" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/category-lookup/dev/src/main/resources/metafile/createMemMetaFile.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390447826978" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/category-lookup/dev/src/main/resources/featurecount/feature_count.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390447826978" ignored="false" />
+    <file path="$PROJECT_DIR$/../../mortar-pig-java-template/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390532285245" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/abfnormalizer/dev/src/main/resources/abf_normalizer.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390554179399" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/abfnormalizer/dev/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390554179399" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/abfnormalizer/dev/src/test/resources/abf_normalizer_test5.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390554179399" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/abfnormalizer/dev/src/test/resources/abf_normalizer.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390554179399" ignored="false" />
+    <file path="/*.regexp" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390703652999" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/common/dev/pom.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390554347459" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/common/dev/src/main/java/com/yahoo/slingshot/di/dac/utils/SequentialToText.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390555290270" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/btosmap/dev/oozie/workflow.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390703350777" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/btosmap/dev/src/main/java/com/yahoo/slingshot/di/tool/btosmap/BtoSmapText.java" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390703350777" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/btosmap/dev/oozie/coordinator.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390703350777" ignored="false" />
+    <file path="$USER_HOME$/yahoo/DataIngestion/trunk/proximity_match/dev/.idea/workspace.xml" changelist="a1c0b4fa-149d-48c6-9090-d71808836d9b" time="1390883650481" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +100,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CloverPlugin" class="com.cenqua.clover.idea.config.IdeaCloverConfig">
-    <projectRebuild class="com.cenqua.clover.idea.config.ProjectRebuild">ASK</projectRebuild>
+  <component name="CloverPlugin" class="com.atlassian.clover.idea.config.IdeaCloverConfig">
     <loadPerTestData>true</loadPerTestData>
     <filteredHighlight>-4144960</filteredHighlight>
     <relativeInitString>false</relativeInitString>
-    <lastProjectConfigTabSelected>0</lastProjectConfigTabSelected>
     <buildWithClover>true</buildWithClover>
+    <lastProjectConfigTabSelected>0</lastProjectConfigTabSelected>
     <periodicRefresh>false</periodicRefresh>
     <notCoveredStripe>-65536</notCoveredStripe>
+    <projectRebuild class="com.atlassian.clover.idea.config.ProjectRebuild">ASK</projectRebuild>
     <flushPolicy>0</flushPolicy>
     <viewIncludeAnnotation>true</viewIncludeAnnotation>
     <alwaysExpandTestClasses>false</alwaysExpandTestClasses>
@@ -49,6 +121,7 @@
     <autoRefresh>true</autoRefresh>
     <coveredHighlight>-3605816</coveredHighlight>
     <enabled>false</enabled>
+    <modelScope class="com.atlassian.clover.idea.util.ModelScope">APP_CLASSES_ONLY</modelScope>
     <alwaysCollapseTestClasses>false</alwaysCollapseTestClasses>
     <excludes null="true" />
     <filteredStripe>-12566464</filteredStripe>
@@ -60,16 +133,15 @@
     <cloudReportIncludeSubpkgs>false</cloudReportIncludeSubpkgs>
     <includes null="true" />
     <includePassedTestCoverageOnly>true</includePassedTestCoverageOnly>
-    <testViewScope class="com.cenqua.clover.idea.config.TestViewScope">GLOBAL</testViewScope>
-    <testCaseLayout class="com.cenqua.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
-    <viewCoverage>true</viewCoverage>
     <contextFilterSpec />
+    <viewCoverage>true</viewCoverage>
     <coveredStripe>-16711936</coveredStripe>
     <autoViewInCloudReport>true</autoViewInCloudReport>
     <autoScroll>true</autoScroll>
     <useGeneratedInitString>true</useGeneratedInitString>
     <showGutter>true</showGutter>
     <dumpInstrumentedSources>false</dumpInstrumentedSources>
+    <testCaseLayout class="com.atlassian.clover.idea.config.TestCaseLayout">TEST_CASES</testCaseLayout>
     <failedCoveredStripe>-14336</failedCoveredStripe>
     <regexpContexts class="java.util.ArrayList" />
     <flattenPackages>false</flattenPackages>
@@ -78,8 +150,8 @@
     <showTooltips>true</showTooltips>
     <showSummaryInToolbar>true</showSummaryInToolbar>
     <span>0</span>
+    <testViewScope class="com.atlassian.clover.idea.config.TestViewScope">GLOBAL</testViewScope>
     <generatedInitString>$PROJECT_DIR$/.clover/coverage.db</generatedInitString>
-    <modelScope class="com.cenqua.clover.idea.config.ModelScope">APP_CLASSES_ONLY</modelScope>
     <outOfDateStripe>-256</outOfDateStripe>
     <failedCoveredHighlight>-3920</failedCoveredHighlight>
     <highlightCovered>true</highlightCovered>
@@ -91,6 +163,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -128,7 +201,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -138,10 +210,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="38" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.0">
+            <state line="25" column="69" selection-start="945" selection-end="945" vertical-scroll-proportion="0.7556008">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hadoop-core-1.2.1.pom" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.pom">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="15" selection-start="1264" selection-end="1275" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="15" selection-start="6477" selection-end="6477" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,73 +240,16 @@
       <file leaf-file-name="WordCountMapperReducerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/WordCountMapperReducerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="27" selection-start="1669" selection-end="1678" vertical-scroll-proportion="0.0">
+            <state line="28" column="32" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mergesort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid/Mergesort.java">
+      <file leaf-file-name="Buffer2String.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/Buffer2String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SMSCDRReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/mrunit/SMSCDRReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenericMemoryCell.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/generic/GenericMemoryCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="5" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="genericMemoryCellTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/genericMemoryCellTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="63" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.7462406">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1050#1059#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogManager.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar!/org/apache/logging/log4j/LogManager.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="67" selection-start="325" selection-end="352" vertical-scroll-proportion="-2.1">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergesortTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid/MergesortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="21" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MockitoTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/MockitoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="12" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0">
+            <state line="11" column="25" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -225,7 +258,47 @@
       <file leaf-file-name="WordCount.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/WordCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
+            <state line="74" column="72" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericOptionsParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/bin/hadoop-1.2.1/src/core/org/apache/hadoop/util/GenericOptionsParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="35" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandLine.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/commons-cli/commons-cli/1.2/commons-cli-1.2-sources.jar!/org/apache/commons/cli/CommandLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="19" selection-start="823" selection-end="834" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run-hadoop.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run-hadoop.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/mrunit/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,27 +311,42 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/mrunit/SMSCDRMapperReducerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/MockitoTest.java" />
-        <option value="$PROJECT_DIR$/assembly/bin.xml" />
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/off_grid/Mergesort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid/Mergesort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid_sort/StraightInsertSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/BinarySort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/StraightInsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/Mergesort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/SelectioinSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid_sort/QuickSortTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/WordCount.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/WordCountMapperReducerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid/Mergesort.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid/MergesortTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/introductionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/generic/introduction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/generic/GenericMemoryCell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/Buffer2String.java" />
+        <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/genericMemoryCellTest.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/bin/apache-maven-3.1.0" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -316,9 +404,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1365" />
-    <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -351,7 +439,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -377,7 +465,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,15 +472,9 @@
               <option name="myItemId" value="hadoop_examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -402,11 +483,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test_data" />
+              <option name="myItemId" value="Maven: commons-cli:commons-cli:1.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons-cli-1.2.jar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,23 +502,21 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hadoop_examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mrunit" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -443,203 +526,45 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="offgrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="offgrid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hadoop_examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mrunit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.cenqua.clover.idea.projectview.PsiDirectoryNodeWrapper" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="Console Folding" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sourceCode/hadoop-1.2.1" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/bin/hadoop-1.2.1" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.apache.hadoop.examples.offgrid_sort" />
       <recent name="org.apache.hadoop.examples.generic" />
       <recent name="org.apache.hadoop.examples.offgrid" />
     </key>
@@ -647,148 +572,134 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.genericMemoryCellTest.Boxing_JDK7_test">
-    <configuration default="false" name="MockitoTest.spyRealObjectTest" type="TestNG" factoryName="TestNG" temporary="true">
+  <component name="RunManager" selected="Application.Buffer2String">
+    <configuration default="false" name="QuickSortTest.testQuicksort" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="hadoop_examples" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.offgrid_sort" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.offgrid_sort.QuickSortTest" />
+      <option name="METHOD_NAME" value="testQuicksort" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="QuickSortTest.testQuicksort_by_reflect" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="hadoop_examples" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.offgrid_sort" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.offgrid_sort.QuickSortTest" />
+      <option name="METHOD_NAME" value="testQuicksort_by_reflect" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="43129" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="QuickSortTest.testQuicksort_bymock" type="TestNG" factoryName="TestNG" temporary="true">
+      <module name="hadoop_examples" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.offgrid_sort" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.offgrid_sort.QuickSortTest" />
+      <option name="METHOD_NAME" value="testQuicksort_bymock" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WordCountMapperReducerTest.testReducer" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="hadoop_examples" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="org.apache.hadoop.examples" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.MockitoTest" />
-      <option name="METHOD_NAME" value="spyRealObjectTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.WordCountMapperReducerTest" />
+      <option name="METHOD_NAME" value="testReducer" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <envs />
-      <properties />
-      <listeners />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="genericMemoryCellTest.autoboxing" type="TestNG" factoryName="TestNG" temporary="true" show_console_on_std_out="true" show_console_on_std_err="true">
-      <module name="hadoop_examples" />
+    <configuration default="false" name="Buffer2String" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.Buffer2String" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.generic" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.generic.genericMemoryCellTest" />
-      <option name="METHOD_NAME" value="autoboxing" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="genericMemoryCellTest" type="TestNG" factoryName="TestNG" temporary="true" show_console_on_std_out="true" show_console_on_std_err="true">
       <module name="hadoop_examples" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.generic" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.generic.genericMemoryCellTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
       <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="genericMemoryCellTest.Boxing_JDK7_test" type="TestNG" factoryName="TestNG" temporary="true" show_console_on_std_err="true">
-      <module name="hadoop_examples" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.generic" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.generic.genericMemoryCellTest" />
-      <option name="METHOD_NAME" value="Boxing_JDK7_test" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="genericMemoryCellTest.Boxing_JDK5_Test" type="TestNG" factoryName="TestNG" temporary="true" show_console_on_std_out="true" show_console_on_std_err="true">
-      <module name="hadoop_examples" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.apache.hadoop.examples.generic" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.hadoop.examples.generic.genericMemoryCellTest" />
-      <option name="METHOD_NAME" value="Boxing_JDK5_Test" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -829,6 +740,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -854,19 +778,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -904,19 +815,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.MockitoTest.spyRealObjectTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.autoboxing" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.Boxing_JDK7_test" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.Boxing_JDK5_Test" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort_by_reflect" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort_bymock" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WordCountMapperReducerTest.testReducer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Buffer2String" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.Boxing_JDK7_test" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.Boxing_JDK5_Test" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.genericMemoryCellTest.autoboxing" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.MockitoTest.spyRealObjectTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Buffer2String" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WordCountMapperReducerTest.testReducer" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort_by_reflect" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.QuickSortTest.testQuicksort_bymock" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -925,6 +836,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a1c0b4fa-149d-48c6-9090-d71808836d9b" name="Default" comment="" />
@@ -934,32 +862,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1920" height="1030" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49730894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.33671293" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25649717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49717513" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29402348" sideWeight="0.27771798" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32508072" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cloverage" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.04855923" sideWeight="0.6232508" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21122995" sideWeight="0.6538025" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29402348" sideWeight="0.6232508" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3767492" sideWeight="0.6632871" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27914438" sideWeight="0.6538025" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34619752" sideWeight="0.6632871" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="483" y="336" width="501" height="342" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Cloverage" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3242938" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.6700565" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Test Runs" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1027,108 +955,115 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/SuiteRunnerWorker.class">
+    <entry file="jar://$USER_HOME$/bin/jdk1.7.0_40/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" />
+        <state line="1937" column="0" selection-start="82587" selection-end="82587" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/TestNG.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/MockitoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="320" column="54" selection-start="13909" selection-end="13909" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sourceCode/hadoop-1.2.1/src/mapred/org/apache/hadoop/mapreduce/Counters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="27" selection-start="3047" selection-end="3047" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.jar!/org/apache/hadoop/mapreduce/Counters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/mrunit/mrunit/0.9.0-incubating/mrunit-0.9.0-incubating-hadoop1.jar!/org/apache/hadoop/mrunit/mapreduce/ReduceDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="59" selection-start="1028" selection-end="1039" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/mrunit/SMSCDRMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+        <state line="16" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/mrunit/SMSCDRReducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid_sort/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid_sort/QuickSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/mrunit/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run-hadoop.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/WordCountMapperReducerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="27" selection-start="1669" selection-end="1678" vertical-scroll-proportion="0.0">
+        <state line="28" column="32" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/offgrid/MergesortTest.java">
+    <entry file="file://$USER_HOME$/yahoo/DataIngestion/trunk/sourcecode/dac/category-lookup/dev/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="21" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/Buffer2String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/MockitoTest.java">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="12" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0">
+        <state line="159" column="15" selection-start="6477" selection-end="6477" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/WordCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
+        <state line="74" column="72" selection-start="2664" selection-end="2664" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.jar!/org/apache/hadoop/util/GenericOptionsParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="30" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/offgrid/Mergesort.java">
+    <entry file="file://$USER_HOME$/bin/hadoop-1.2.1/src/core/org/apache/hadoop/util/GenericOptionsParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
+        <state line="29" column="35" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/hadoop/examples/generic/GenericMemoryCell.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-cli/commons-cli/1.2/commons-cli-1.2-sources.jar!/org/apache/commons/cli/CommandLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0">
+        <state line="17" column="19" selection-start="823" selection-end="834" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="15" selection-start="1264" selection-end="1275" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="38" selection-start="3217" selection-end="3217" vertical-scroll-proportion="0.0">
+        <state line="25" column="69" selection-start="945" selection-end="945" vertical-scroll-proportion="0.7556008">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar!/org/apache/logging/log4j/LogManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="67" selection-start="325" selection-end="352" vertical-scroll-proportion="-2.1">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/apache/hadoop/examples/generic/genericMemoryCellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="63" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.7462406">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1050#1059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
