@@ -158,3 +158,7 @@ The Enforcer plugin provides goals to control certain environmental constraints 
           </execution>
         </executions>
       </plugin>
+
+7. diff vs patch
+$ diff 1.state 2.state --ignore-matching-lines=^yum.timestamp:.*$ --ignore-matching-lines=^+++.*$ --ignore-matching-lines=^yum.command:.*$ --side-by-side  --suppress-common-lines
+
