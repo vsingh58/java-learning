@@ -24,11 +24,11 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class WordCountMapperReducerTest {
-    MapDriver<Object, Text, Text, IntWritable> mapDirver;
-    ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver = ReduceDriver.newReduceDriver();
-    MapReduceDriver<Object, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
+    private static MapDriver<Object, Text, Text, IntWritable> mapDirver;
+    private static ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver = ReduceDriver.newReduceDriver();
+    private static MapReduceDriver<Object, Text, Text, IntWritable, Text, IntWritable> mapReduceDriver;
     //String input_data = "The dependency plugin provides the capability to manipulate artifacts. It can copy and/or unpack artifacts from local or remote repositories to a specified location.";
-    String input_data = "The";
+    private static String input_data = "The";
     private List<IntWritable> values;
 
     //    @BeforeTest
