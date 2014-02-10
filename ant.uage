@@ -1,0 +1,88 @@
+         <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-antrun-plugin</artifactId>
+              <version>1.7</version>
+              <executions>
+                  <execution>
+                      <id>refactor the project's directory structure</id>
+                      <phase>verify</phase>
+                      <goals>
+                          <goal>run</goal>
+                      </goals>
+                      <configuration>
+                          <target>
+                              <echo message="*** Refactor ${project.basedir} directory structure ***"/>
+                              <mkdir dir="dev"/>
+                              <move todir="dev">
+                                  <filelist dir=".">
+                                      <fileset dir="oozie"/>
+                                      <fileset dir="lib"/>
+                                      <file name="pom.xml"/>
+                                      <fileset dir="script"/>
+                                      <fileset dir="src"/>
+                                  </filelist>
+                              </move>
+                          </target>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
+
+error:
+>mvn process-sources
+/home/y/libexec/maven/bin/mvn process-sources
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building slingshot_di_template-archetype
+[INFO]    task-segment: [process-sources]
+[INFO] ------------------------------------------------------------------------
+[INFO] [enforcer:enforce {execution: enforce}]
+[INFO] [antrun:run {execution: refactor the project's directory structure}]
+[INFO] Executing tasks
+
+main:
+     [echo] *** Refactor /home/zhishan/yahoo/DataIngestion/trunk/tools/slingshot_di_template-archetype/src/main/resources/archetype-resources.bk directory structure ***
+    [mkdir] Created dir: /home/zhishan/yahoo/DataIngestion/trunk/tools/slingshot_di_template-archetype/src/main/resources/archetype-resources.bk/dev
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] An Ant BuildException has occured: filelist doesn't support the nested "fileset" element.
+around Ant part ...<move todir="dev">... @ 6:21 in /home/zhishan/yahoo/DataIngestion/trunk/tools/slingshot_di_template-archetype/src/main/resources/archetype-resources.bk/target/antrun/build-main.xml
+
+The <filelist> type doesn't support the nested "fileset" element.
+
+Note: run it with Phase, if by "plugin:goal", its default action is invoked.
+
+2. 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>refactor the project's directory structure</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <echo message="*** Refactor ${project.basedir} directory structure ***"/>
+                                <mkdir dir="dev"/>
+                                <move todir="dev" file="oozie" />
+                                <move todir="dev" file="lib"/>
+                                <move file="script" todir="dev"/>
+                                <move file="src" todir="dev"/>
+                                <move file="pom.xml" todir="dev"/>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+Althogh the "oozie", "lib", "script" and "src"  are directories containing many FILE, it still is regarded as FILE.
+http://ant.apache.org/manual/tasksoverview.html
+http://ant.apache.org/manual/Tasks/move.html
+
+Attribute 	Description 	Required
+file 	the file or directory to move 	One of file or at least one nested resource collection element
