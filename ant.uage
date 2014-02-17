@@ -1,11 +1,20 @@
-         <plugin>
+archetype:
+  1 #set( $symbol_pound = '#' )
+  2 #set( $symbol_dollar = '$' )
+  3 #set( $symbol_escape = '\' )
+  5 ## this is a single line comment, will not be see by user
+  6 $symbol_pound
+  7 ${symbol_pound}a
+
+-----         
+<plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-antrun-plugin</artifactId>
               <version>1.7</version>
               <executions>
                   <execution>
                       <id>refactor the project's directory structure</id>
-                      <phase>verify</phase>
+                      <phase>process-sources</phase>
                       <goals>
                           <goal>run</goal>
                       </goals>
@@ -53,32 +62,6 @@ The <filelist> type doesn't support the nested "fileset" element.
 
 Note: run it with Phase, if by "plugin:goal", its default action is invoked.
 
-2. 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <id>refactor the project's directory structure</id>
-                        <phase>process-sources</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <target>
-                                <echo message="*** Refactor ${project.basedir} directory structure ***"/>
-                                <mkdir dir="dev"/>
-                                <move todir="dev" file="oozie" />
-                                <move todir="dev" file="lib"/>
-                                <move file="script" todir="dev"/>
-                                <move file="src" todir="dev"/>
-                                <move file="pom.xml" todir="dev"/>
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
 
 Althogh the "oozie", "lib", "script" and "src"  are directories containing many FILE, it still is regarded as FILE.
 http://ant.apache.org/manual/tasksoverview.html

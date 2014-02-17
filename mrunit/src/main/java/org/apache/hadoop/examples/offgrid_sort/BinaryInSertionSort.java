@@ -10,7 +10,7 @@ package org.apache.hadoop.examples.offgrid_sort;
 
 /*copied from java.util.ComparableTimeSort.java
 * */
-public class BinarySort {
+public class BinaryInSertionSort {
 
     /**
      * Sorts the specified portion of the specified array using array binary
