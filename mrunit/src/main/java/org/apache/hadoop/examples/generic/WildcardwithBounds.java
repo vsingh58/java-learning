@@ -1,6 +1,7 @@
 package org.apache.hadoop.examples.generic;
 
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * Created with IntelliJ IDEA.
@@ -35,16 +36,16 @@ public class WildcardwithBounds {
 
     // works if passed a Collection<Square>
     //public static double totalArea(Collection <Shape> arr)
-    public static double totalArea(Collection <? extends  Shape> arr){
-
-        double total = 0;
-        for(Shape s : arr){
-            if(s!=null){
-                total += s.getArea();
-            }
-        }
-        return total;
-    }
+//    public static double totalArea(Collection < ? extends  Shape> arr){
+//
+//        double total = 0;
+//        for(Shape s : arr){
+//            if(s!=null){
+//                total += s.getArea();
+//            }
+//        }
+//        return total;
+//    }
 
     public static void main(String[] args){
         double raduis = 3.3;
@@ -58,6 +59,16 @@ public class WildcardwithBounds {
         * */
         double totalArea = WildcardwithBounds.totalArea(arr);
         System.out.println("Shape total Area: "+ totalArea);
+    }
+
+    public static double totalArea(Collection<? super Shape> shapeArrayList) {
+        double total = 0;
+//        for( int i: shapeArrayList.)
+
+        for (int i =  0; i< shapeArrayList.size(); i++){
+
+        }
+        return 0;
     }
 }
 

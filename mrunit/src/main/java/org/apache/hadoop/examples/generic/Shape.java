@@ -7,6 +7,6 @@ package org.apache.hadoop.examples.generic;
  * Time: 3:27 AM
  * To change this template use File | Settings | File Templates.
  */
-public interface Shape {
-    public double getArea();
+public abstract class Shape {
+    abstract public double getArea();
 }

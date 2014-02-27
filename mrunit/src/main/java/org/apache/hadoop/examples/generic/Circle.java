@@ -7,7 +7,7 @@ package org.apache.hadoop.examples.generic;
  * Time: 3:27 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Circle implements   Shape {
+public class Circle extends    Shape {
     private double radius;
 
     Circle(double r){

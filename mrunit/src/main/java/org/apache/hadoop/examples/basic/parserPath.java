@@ -54,9 +54,12 @@ public class parserPath {
        Assert.assertEquals(getPathStrings(commaPath)[0].toString(), commaPath);
 
         String commaPath1 = new String("/user/grid/2013,2014");// illegal expression
-        System.out.println(getPathStrings(commaPath1)[0].toString());
-        System.out.println(getPathStrings(commaPath1)[1].toString());
-
+        System.out.println(getPathStrings(commaPath1)[0].toString());///user/grid/2013
+        System.out.println(getPathStrings(commaPath1)[1].toString());//2014
+        // hadoop know such path format /{1,2}/*, but don't recognize .../2013,2014, which is treated as two different path.
+        String commaPath2=new String("/user/grid/{2013,2014}/v2/part-*.avro");
+        System.out.println(getPathStrings(commaPath2)[0].toString());
+        Assert.assertEquals(getPathStrings(commaPath2)[0].toString(), commaPath2);
     }
 }
 //

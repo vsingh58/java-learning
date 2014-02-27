@@ -7,7 +7,7 @@ package org.apache.hadoop.examples.generic;
  * Time: 3:30 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Square implements Shape {
+public class Square extends Shape {
     private double radius;
     Square(double radius){
         this.radius = radius;
