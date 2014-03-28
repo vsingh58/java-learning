@@ -9,7 +9,7 @@ package org.apache.hadoop.examples.offgrid_sort;
  */
 public class BubbleSort {
 
-    public static <T extends Comparable<? super T>>
+    public <T extends Comparable<? super T>>
     void bubbleSort( T[] rawArr){
         for(int outer= rawArr.length -1 ; outer>1; outer--){       // outer loop (backward)
             for(int inner=0; inner<outer; inner++){               // inner loop (forward)
@@ -53,7 +53,8 @@ public class BubbleSort {
 
     public static void main(String [] args){
         Integer [] iArray = {13,1, 24, 26, 2, 15, 38,27};
-        BubbleSort.<Integer>bubbleSort(iArray);
+//        BubbleSort.<Integer>bubbleSort(iArray);
+        new BubbleSort().bubbleSort(iArray);
         printArray(iArray);
     }
     private static <T>

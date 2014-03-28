@@ -63,7 +63,7 @@ public class CovariantArrayType {
         * It is ok, because Circle IS-A Shape and Square IS-A Shape too. */
     }
 
-    @Test(description = "test double totalArea(Collection<Shape> arr)")
+   /* @Test(description = "test double totalArea(Collection<Shape> arr)")
     public void inheritanceAggregateTypeTest_2() {
         Collection<Square> squares = new ArrayList<Square>();
         squares.add(new Square(raduis));
@@ -73,7 +73,7 @@ public class CovariantArrayType {
         double totalArea = WildcardwithBounds.totalArea(squares);
 
         System.out.println("Shape total Area: " + totalArea);
-    }
+    }*/
 
     /*
     *

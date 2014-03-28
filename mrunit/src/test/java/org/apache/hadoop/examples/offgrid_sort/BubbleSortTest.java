@@ -15,7 +15,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class BubbleSortTest {
-
+/*
     @Test(description = "Double type")
     public void testBubbleSort() throws Exception {
         Double [] doubles = {2.34, 1.0,0.344,2.54,0.46,3.2013, };
@@ -67,5 +67,5 @@ public class BubbleSortTest {
 
         String [] expects = {"Cdfg", "cDfg", "cdfg","hello", "world"};
         Assert.assertEquals( actual, expects, "String type sort fails");
-    }
+    }*/
 }
