@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>color</name>
+        <value>yellow</value>
+        <final>true</final>
+        <description>color key used to learn hadoop configuration and GenericParser</description>
+    </property>
+
+    <property>
+        <name>size</name>
+        <value>1608*134</value>
+        <description>pixel section size</description>
+    </property>
+    <property>
+        <name>weight</name>
+        <value>80</value>
+        <description>weight unit(KG)</description>
+    </property>
+
+</configuration>
