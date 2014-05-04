@@ -8,6 +8,8 @@ hadoop jar ../target/wordcount-2.0.jar  com.myhp.wordcount.v3.WordCount \
 -libjars ../jars/json-20140107.jar \
 -D mapred.reduce.tasks=2 \
 -conf ../conf/configuration-oneshot.xml \
+-files ../conf/cache.file \
+-archives ../conf/a.archive \
 ${input} $output
 
 
@@ -21,3 +23,10 @@ ${input} $output
 #(color, yellow)
 #(size, 1608*134)
 #(weight, 80)
+
+# other options ouptut
+#-jt: localhost:9001
+#-fs: hdfs://localhost:9000
+#-libjars: file:/home/zhishan/workspace/git/java-learning/mapreducewd/jars/json-20140107.jar
+#-files: file:/home/zhishan/workspace/git/java-learning/mapreducewd/conf/cache.file
+#-archives: file:/home/zhishan/workspace/git/java-learning/mapreducewd/conf/a.archive
