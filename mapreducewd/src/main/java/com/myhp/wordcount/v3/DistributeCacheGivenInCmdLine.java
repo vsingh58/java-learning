@@ -60,6 +60,8 @@ public class DistributeCacheGivenInCmdLine extends Configured implements Tool {
         conf.setMapperClass(TokenCountMapper.class);
         conf.setCombinerClass(LongSumReducer.class);
         conf.setReducerClass(LongSumJSONReducer.class);
+    //Set whether the framework should keep the intermediate files for failed tasks
+        conf.setKeepFailedTaskFiles(true);
 
         // Add the user given files to the DistributedCache(by using -files on commandline)
         //String localizedFile = conf.get("tmpfiles","not found");
@@ -136,12 +138,29 @@ Reduce Task log:
       DistributedCache.createSymlink(conf);
 
 2. DistributedCache.getCacheFiles(job) and DistributedCache.getLocalCacheFiles(job) are different
-former return hdfs:// file, but the other return a file with default local protocol. But both them could fetch the cache's content.
+former returns hdfs://file, but the other return a file with default local protocol. But both them could fetch the cache's content.
+Therefore, on the DataNode assigned a TaskTrack, it is the most convenient to access the localized data on the task node by using
+JobConf's method: getLocalCacheFiles() and getLocalCacheArchives(), rather than the DistributedCache method.
 
 3. The cache file is stored in ${mapred.working.dir}/${mapreduce.jobtracker.staging.root.dir}/${user.name},
 ${mapred.working.dir} is hdfs://localhost:9000/user/zhishan,
 ${mapreduce.jobtracker.staging.root.dir}  is ${hadoop.tmp.dir}/mapred/staging.
 
 But both the Mapper and Reducer can fetch it by using relative path "./cachefileName Or Sysmblic name".
-p274
+
+mapred.local.dir	${hadoop.tmp.dir}/mapred/local
+code:
+            //cacheFileReader(new File("cache.file")); error, FileNotFound
+            LOG.info("=============== Reading Symbolic File With Relative Path ==============");
+            cacheFileReader(new File("cachefile.symbolic"));
+
+e.g, output:
+2014-05-04 21:28:03,122 INFO com.myhp.wordcount.v3.LongSumJSONReducer: =============== Reading Symbolic File With Relative Path ==============
+2014-05-04 21:28:03,122 INFO com.myhp.wordcount.v3.LongSumJSONReducer: cacheFileReader: *** This is the Distributed Cache File.
+2014-05-04 21:28:03,122 INFO com.myhp.wordcount.v3.LongSumJSONReducer: cacheFileReader: *** Distribute application-specific large, read-only files efficiently.
+
+In the above #2 & #3, the conclusion should be
+when you want to access distributedCache files, there are 2 ways:
+1st, using DistributedCache.getLocalCacheFiles(JobConf), which return a path list.
+2nd, using the cached file's symbolic. At that time, the file symbolic will be treated as it is located in the current path.
 * */

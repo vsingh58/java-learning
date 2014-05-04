@@ -4,11 +4,11 @@ output=${2:-/data/out} # no assigned
 hadoop fs -rmr -skipTrash $output
 echo "=========== Try again =============="
 
-hadoop jar ../target/wordcount-2.0.jar  com.myhp.wordcount.v3.WordCount \
+hadoop jar ../target/wordcount-2.0.jar  com.myhp.wordcount.v3.DistributeCacheGivenInCmdLine \
 -libjars ../jars/json-20140107.jar \
 -D mapred.reduce.tasks=2 \
 -conf ../conf/configuration-oneshot.xml \
--files ../conf/cache.file \
+-files ../conf/cache.file#cachefile.symbolic \
 -archives ../conf/a.archive \
 ${input} $output
 
