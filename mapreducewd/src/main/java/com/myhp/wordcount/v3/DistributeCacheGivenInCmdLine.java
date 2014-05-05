@@ -63,6 +63,7 @@ public class DistributeCacheGivenInCmdLine extends Configured implements Tool {
     //Set whether the framework should keep the intermediate files for failed tasks
         conf.setKeepFailedTaskFiles(true);
 
+        // "-files" used in commandline has the same effective as below:
         // Add the user given files to the DistributedCache(by using -files on commandline)
         //String localizedFile = conf.get("tmpfiles","not found");
         // a comma separated list of local files
@@ -106,7 +107,7 @@ hadoop jar ../target/wordcount-2.0.jar  com.myhp.wordcount.v3.WordCount \
 -libjars ../jars/json-20140107.jar \
 -D mapred.reduce.tasks=2 \
 -conf ../conf/configuration-oneshot.xml \
--files ../conf/cache.file \
+-files ../conf/cache.file#cachefile.symbolic \
 -archives ../conf/a.archive \
 ${input} $output
 
@@ -146,7 +147,7 @@ JobConf's method: getLocalCacheFiles() and getLocalCacheArchives(), rather than 
 ${mapred.working.dir} is hdfs://localhost:9000/user/zhishan,
 ${mapreduce.jobtracker.staging.root.dir}  is ${hadoop.tmp.dir}/mapred/staging.
 
-But both the Mapper and Reducer can fetch it by using relative path "./cachefileName Or Sysmblic name".
+But both the Mapper and Reducer can fetch it by using relative path "Sysmblic name".
 
 mapred.local.dir	${hadoop.tmp.dir}/mapred/local
 code:
@@ -163,4 +164,24 @@ In the above #2 & #3, the conclusion should be
 when you want to access distributedCache files, there are 2 ways:
 1st, using DistributedCache.getLocalCacheFiles(JobConf), which return a path list.
 2nd, using the cached file's symbolic. At that time, the file symbolic will be treated as it is located in the current path.
+
+
+Note: In JobClient.java
+configure the jobconf of the user with the command line options of -libjars, -files, -archives
+
+copyAndConfigureFiles() called
+  private URI getPathURI(Path destPath, String fragment)
+      throws URISyntaxException {
+    URI pathURI = destPath.toUri();
+    if (pathURI.getFragment() == null) {
+      if (fragment == null) {
+        pathURI = new URI(pathURI.toString() + "#" + destPath.getName());
+      } else {
+        pathURI = new URI(pathURI.toString() + "#" + fragment);
+      }
+    }
+    return pathURI;
+  }
+  So, it mean that, when the option "-files cachefile" is given, the cachefile.getName() will be treated as symlink name.
+  if "-files cachefile#symlink" (with fragment) will create the sysmlink name "symlink" as the cachefile's link.
 * */

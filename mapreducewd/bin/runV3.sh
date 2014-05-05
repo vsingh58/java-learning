@@ -12,6 +12,14 @@ hadoop jar ../target/wordcount-2.0.jar  com.myhp.wordcount.v3.DistributeCacheGiv
 -archives ../conf/a.archive \
 ${input} $output
 
+#"-files" used in commandline has the same effective in java code as below: 
+# Add the user given files to the DistributedCache(by using -files on commandline)
+#String localizedFile = conf.get("tmpfiles","not found");
+# a comma separated list of local files
+# DistributedCache.addCacheFile(
+#         new URI(localizedFile + "#distributed.cachefile.symlink"),
+#         conf);
+# DistributedCache.createSymlink(conf)
 
 #mvn clean package -Dmaven.test.skip=true
 #mvn clean package -DskipTests

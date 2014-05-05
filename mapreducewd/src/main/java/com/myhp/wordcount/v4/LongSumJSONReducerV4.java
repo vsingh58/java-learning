@@ -7,6 +7,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.filecache.DistributedCache;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
@@ -53,60 +54,32 @@ public class LongSumJSONReducerV4 extends MapReduceBase
                     LOG.info(p + "]" + line);
                 }
             }
-
-            URI[] file1s = DistributedCache.getCacheFiles(job);
-            for (URI uri : file1s) {
-                LOG.info("DFS Cache File:" + uri.toString());
-            }
             // symlinks are to be create for the localized cache files in the current working directory by default.
             LOG.info("whether symbolic created? :" + DistributedCache.getSymlink(job));
 
-            //DistributedCache.getFileStatus(job, new )
+            // e.g ../conf/cache.file#cachefile.symbolic is given as the args[2] from commandline.
+            cachedFileReader(new File("cachefile.symbolic"));
+
 
         } catch (IOException e) {
             e.printStackTrace();
+            System.err.println("***Error: Exit with failure initialization the LongSumJSONReducer");
+            System.exit(-1);
         }
 
     }
 
-    private void readFiles(String pathURI, Configuration conf) {
-        Path pt = new Path(pathURI);
-        FileSystem fs = null;
+    private static void cachedFileReader(File file) throws IOException {
+        BufferedReader in = null;
         try {
-            fs = FileSystem.get(conf);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        BufferedReader br = null;
-        String line;
-        try {
-            br = new BufferedReader(new InputStreamReader(fs.open(pt)));
-           /* line = br.readLine();
-            while (line != null) {
-                System.out.println(line);
-
-                // be sure to read the next line otherwise you'll get an infinite loop
-                line = br.readLine();
+            in = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            String line;
+            while ((line = in.readLine()) != null) {
+                LOG.info("cacheFileReader: " + line);
             }
-            */
-            // refactor as blow:
-            while ((line = br.readLine()) != null) {
-                LOG.info(line);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
         } finally {
-            // you should close out the BufferedReader
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+            IOUtils.closeStream(in);
         }
-
     }
 
     public void reduce(Text key, Iterator<LongWritable> values,
