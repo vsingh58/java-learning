@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+  <name>hive.metastore.warehouse.dir</name>
+  <value>/home/zhishan/hive/warehouse</value>
+  <description>Local or HDFS directory where hive keeps table contents.</description>
+</property>
+
+<property>
+  <name>hive.metastore.local</name>
+  <value>true</value>
+  <description>Use false if a production metatstore server is used.</description>
+</property>
+<property>
+  <name>javax.jdo.option.ConnectionURL</name>
+  <value>jdbc:derby:;databaseName=/home/zhishan/hive/metastore_db;create=true</value>
+  <description>The JDBC connection URL</description>
+</property>
+</configuration>

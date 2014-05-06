@@ -1,0 +1,20 @@
+hive> select year, MAX(temperature) from records;
+FAILED: SemanticException [Error 10025]: Line 1:7 Expression not in GROUP BY key 'year'
+
+$ hive -hiveconf fs.default.name=hdfs:// -hiveconf mapred.job.tracker=localhost:8021
+By default, the "fs.default.name" is "file:///". 
+
+
+$ hive --config, HIVE_CONF_DIR 
+hive.metastore.warehouse.dir defines what directory the TABLEs are stored.
+
+$
+hive> select year, max(temperature)  
+    > from records 
+    > where temperature != -11  
+    > and quality = 0 
+    > group by year;
+hive -f hive.script
+hive -e command
+
+
