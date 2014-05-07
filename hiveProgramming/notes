@@ -1,0 +1,11 @@
+1. CLI - Command-Line Interface
+Using it, you can create tables, inspect schema and queray table, etc.
+
+\n For text files, each line is a record, so the line feed character separates records.
+^A (“control” A) Separates all fields (columns). Written using the octal code \001 when explicitly
+specified in CREATE TABLE statements.
+^B Separate the elements in an ARRAY or STRUCT , or the key-value pairs in a MAP .
+Written using the octal code \002 when explicitly specified in CREATE TABLE
+statements.
+^C Separate the key from the corresponding value in MAP key-value pairs. Written using the octal code \003 when explicitly specified in CREATE TABLE statment.
+

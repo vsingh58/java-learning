@@ -1,0 +1,15 @@
+{ "address" : { "city" : "Chicago",
+      "state" : "IL",
+      "street" : "1 Michigan Ave.",
+      "zip" : 60600
+    },
+  "deductions" : { "Federal Taxes" : 0.20000000000000001,
+      "Insurance" : 0.10000000000000001,
+      "State Taxes" : 0.050000000000000003
+    },
+  "name" : "John Doe",
+  "salary" : 100000.0,
+  "subordinates" : [ "Mary Smith",
+      "Todd Jones"
+    ]
+}
