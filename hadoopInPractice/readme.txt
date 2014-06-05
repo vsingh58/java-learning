@@ -15,3 +15,7 @@ Error:
 
 Checking  Media  Presence………
 No Media  Present………Error1962：No  operating  system  found.Boot  sequence  will  automatically  repeat.
+
+http://mvnrepository.com/artifact/org.codehaus.jettison/jettison/1.3.5
+http://jettison.codehaus.org/Download
+
