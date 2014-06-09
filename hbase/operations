@@ -1,0 +1,65 @@
+> create 'tablename' 'colum'
+> list 'tablename'
+> 
+Here is some help for this command:
+Put a cell 'value' at specified table/row/column and optionally
+timestamp coordinates.  To put a cell value into table 't1' at
+row 'r1' under column 'c1' marked with the time 'ts1', do:
+
+  hbase> put 't1', 'r1', 'c1', 'value', ts1
+
+
+hbase(main):019:0> put 'testtable','myrow-1','colfam1:q1','value-1'
+
+hbase(main):022:0> scan 'testtable'
+ROW                                    COLUMN+CELL                                                                                                    
+ myrow-1                               column=colfam1:q1, timestamp=1402326635686, value=value-1                                                      
+ myrow-2                               column=colfam1:q2, timestamp=1402326648823, value=value-2                                                      
+ myrow-2                               column=colfam1:q3, timestamp=1402326657541, value=value-3                                                      
+2 row(s) in 0.0100 seconds
+
+hbase(main):026:0> get 'testtable','myrow-1'
+COLUMN                                 CELL                                                                                                           
+ colfam1:q1                            timestamp=1402326635686, value=value-1                                                                         
+1 row(s) in 0.0120 seconds
+
+hbase(main):027:0> get 'testtable','myrow-2'
+COLUMN                                 CELL                                                                                                           
+ colfam1:q2                            timestamp=1402326648823, value=value-2                                                                         
+ colfam1:q3                            timestamp=1402326657541, value=value-3                                                                         
+2 row(s) in 0.0050 seconds
+
+hbase(main):028:0> delete 'testtable','myrow-2','colfma1:q4'
+
+ERROR: org.apache.hadoop.hbase.regionserver.NoSuchColumnFamilyException: org.apache.hadoop.hbase.regionserver.NoSuchColumnFamilyException: Column family colfma1 does not exist in region testtable,,1402326545202.f7880f9526b16c01e121e8cd3d234a28. in table 'testtable', {NAME => 'colfam1', DATA_BLOCK_ENCODING => 'NONE', BLOOMFILTER => 'NONE', REPLICATION_SCOPE => '0', COMPRESSION => 'NONE', VERSIONS => '3', TTL => '2147483647', MIN_VERSIONS => '0', KEEP_DELETED_CELLS => 'false', BLOCKSIZE => '65536', ENCODE_ON_DISK => 'true', IN_MEMORY => 'false', BLOCKCACHE => 'true'}
+
+Here is some help for this command:
+Put a delete cell value at specified table/row/column and optionally
+timestamp coordinates.  Deletes must match the deleted cell's
+coordinates exactly.  When scanning, a delete cell suppresses older
+versions. To delete a cell from  't1' at row 'r1' under column 'c1'
+marked with the time 'ts1', do:
+
+  hbase> delete 't1', 'r1', 'c1', ts1
+
+
+hbase(main):029:0> delete 'testtable','myrow-2','colfma1:q2'
+
+ERROR: org.apache.hadoop.hbase.regionserver.NoSuchColumnFamilyException: org.apache.hadoop.hbase.regionserver.NoSuchColumnFamilyException: Column family colfma1 does not exist in region testtable,,1402326545202.f7880f9526b16c01e121e8cd3d234a28. in table 'testtable', {NAME => 'colfam1', DATA_BLOCK_ENCODING => 'NONE', BLOOMFILTER => 'NONE', REPLICATION_SCOPE => '0', COMPRESSION => 'NONE', VERSIONS => '3', TTL => '2147483647', MIN_VERSIONS => '0', KEEP_DELETED_CELLS => 'false', BLOCKSIZE => '65536', ENCODE_ON_DISK => 'true', IN_MEMORY => 'false', BLOCKCACHE => 'true'}
+
+Here is some help for this command:
+Put a delete cell value at specified table/row/column and optionally
+timestamp coordinates.  Deletes must match the deleted cell's
+coordinates exactly.  When scanning, a delete cell suppresses older
+versions. To delete a cell from  't1' at row 'r1' under column 'c1'
+marked with the time 'ts1', do:
+
+  hbase> delete 't1', 'r1', 'c1', ts1
+
+
+hbase(main):030:0> delete 'testtable','myrow-2','colfam1:q2'
+0 row(s) in 0.0050 seconds
+
+> disable 'tbn'
+> enable 'tbn'
+> drop 'tbn'
