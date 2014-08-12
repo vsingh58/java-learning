@@ -1,0 +1,26 @@
+1. 
+hive> add jar /home/zhishan/workspace/git/java-learning/hiveProgramming/udfs/target/hive-udf-1.0-SNAPSHOT.jar;
+hive> create temporary function zodiac AS 'com.hive_udf.UDFZodiacSign'; 
+hive> select zodiac(bday),zodiac(1,9) from littlebigdata;  
+
+2. How to implement a UDF?
+2.1 register fuction:
+  src/ql/src/java/org/apache/hadoop/hive/ql/exec/FunctionRegistry.java
+  registerUDF("acos", UDFAcos.class, false);
+   sterUDF("to_date", UDFDate.class, false);
+    registerUDF("weekofyear", UDFWeekOfYear.class, false);
+
+    registerUDF("date_add", UDFDateAdd.class, false);
+    registerUDF("date_sub", UDFDateSub.class, false);
+    registerUDF("datediff", UDFDateDiff.class, false);
+    registerGenericUDF("array", GenericUDFArray.class);
+    registerGenericUDF("assert_true", GenericUDFAssertTrue.class);
+    registerGenericUDF("map", GenericUDFMap.class);
+    registerGenericUDF("struct", GenericUDFStruct.class);
+    registerGenericUDF("named_struct", GenericUDFNamedStruct.class);
+    registerGenericUDF("create_union", GenericUDFUnion.class);
+
+
+e.2 Each function:
+./ql/src/java/org/apache/hadoop/hive/ql/udf/UDFAcos.java
+

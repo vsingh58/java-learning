@@ -1,0 +1,61 @@
+P167
+
+To write a UDF, start by extending the UDF class and implements and the evaluate()
+function. During query processing, an instance of the class is instantiated for each usage
+of the function in a query. The evaluate() is called for each input row. The result of 
+evaluate() is returned to Hive. It is legal to overload the evaluate method. Hive will
+pick the method that matches in a similar way to Java method overloading.
+
+The @Description(...) is an optional Java annotation. This is how function documen-
+tation is defined and you should use these annotations to document your own UDFs.
+When a user invokes DESCRIBE FUNCTION ... , the _FUNC_ strings will be replaced with
+the function name the user picks when defining a “temporary” function, as discussed
+below.
+
+Note:
+The arguments and return types of the UDF’s evaluate() function can
+only be types that Hive can serialize. For example, if you are working
+with whole numbers, a UDF can take as input a primitive int , an Inte
+ger wrapper object, or an IntWritable , which is the Hadoop wrapper
+for integers. You do not have to worry specifically about what the caller
+is sending because Hive will convert the types for you if they do not
+match. Remember that null is valid for any type in Hive, but in Java
+primitives are not objects and cannot be null .
+
+To use the UDF inside Hive, compile the Java code and package the UDF bytecode
+class file into a JAR file. Then, in your Hive session, add the JAR to the classpath and
+use a CREATE FUNCTION statement to define a function that uses the Java class:
+hive> ADD JAR /full/path/to/zodiac.jar;
+hive> CREATE TEMPORARY FUNCTION zodiac
+> AS 'org.apache.hadoop.hive.contrib.udf.example.UDFZodiacSign';
+Note that quotes are not required around the JAR file path and currently it needs to be
+a full path to the file on a local filesystem. Hive not only adds this JAR to the classpath,
+it puts the JAR file in the distributed cache so it’s available around the cluster.
+
+Now the Zodiac UDF can be used like any other function. Notice the word TEMPO
+RARY found inside the CREATE FUNCTION statement. Functions declared will only be avail-
+able in the current session. You will have to add the JAR and create the function in each
+session. However, if you use the same JAR files and functions frequently, you can add
+these statements to your $HOME/.hiverc file. ***
+e.g 
+$ cat ~/.hiverc 
+ADD JAR /home/zhishan/workspace/git/java-learning/hiveProgramming/udfs/target/hive-udfs-1.0-SNAPSHOT.jar;
+CREATE TEMPORARY FUNCTION zodiac AS 'org.apache.hadoop.hive.user_udfs.UDFZodiacSign';
+
+when the hive session is started, zodiac will be showed by using 'show functions'.
+
+To recap, our UDF allows us to do custom transformations inside the Hive language.
+Hive can now convert the user’s birthday to the corresponding Zodiac sign while it is
+doing any other aggregations and transformations.
+If we’re finished with the function, we can drop it:
+hive> DROP TEMPORARY FUNCTION IF EXISTS zodiac;
+As usual, the IF EXISTS is optional. It suppresses errors if the function doesn’t exist.
+
+P175
+You may have noticed that Hive tends to avoid allocating objects with
+new whenever possible. Hadoop and Hive use this pattern to create fewer
+temporary objects and thus less work for the JVM’s Garbage Collec
+tion algorithms. Keep this in mind when writing UDFs, because refer-
+ences are typically reused. Assuming immutable objects will lead to
+bugs!
+
