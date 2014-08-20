@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: zhishan
+Build-Jdk: 1.7.0_45
+Created-By: Apache Maven 3.1.1
+Archiver-Version: Plexus Archiver
+Main-Class: com.j2se.BinarySearch
+

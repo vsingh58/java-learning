@@ -4,6 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import com.j2se.BinarySearch;
 
 /**
  * Root resource (exposed at "myresource" path)
@@ -20,6 +21,8 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it!";
+        int b[] = {0, 1, 2, 3, 4, 5}; // a[4] = 4, a[5]=5;
+
+        return "Got it!" + BinarySearch.binary_search(b, 5);
     }
 }
