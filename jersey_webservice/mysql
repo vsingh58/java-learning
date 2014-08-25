@@ -1,0 +1,404 @@
+mysql> show variables like 'log_%'
+    -> ;
++---------------------------------+---------------------+
+| Variable_name                   | Value               |
++---------------------------------+---------------------+
+| log_bin                         | OFF                 |
+| log_bin_trust_function_creators | OFF                 |
+| log_error                       | /var/log/mysqld.log |
+| log_output                      | FILE                |
+| log_queries_not_using_indexes   | OFF                 |
+| log_slave_updates               | OFF                 |
+| log_slow_queries                | OFF                 |
+| log_warnings                    | 1                   |
++---------------------------------+---------------------+
+8 rows in set (0.25 sec)
+
+mysql> show variables like 'log%';
++---------------------------------+---------------------+
+| Variable_name                   | Value               |
++---------------------------------+---------------------+
+| log                             | OFF                 |
+| log_bin                         | OFF                 |
+| log_bin_trust_function_creators | OFF                 |
+| log_error                       | /var/log/mysqld.log |
+| log_output                      | FILE                |
+| log_queries_not_using_indexes   | OFF                 |
+| log_slave_updates               | OFF                 |
+| log_slow_queries                | OFF                 |
+| log_warnings                    | 1                   |
++---------------------------------+---------------------+
+9 rows in set (0.62 sec)
+mysql> show variables like 'datadir'
+    -> ;
++---------------+-----------------+
+| Variable_name | Value           |
++---------------+-----------------+
+| datadir       | /var/lib/mysql/ |
++---------------+-----------------+
+
+
+[root@lakala mysql]# mysqlbinlog binlog.000001 
+/*!50530 SET @@SESSION.PSEUDO_SLAVE_MODE=1*/;
+/*!40019 SET @@session.max_insert_delayed_threads=0*/;
+/*!50003 SET @OLD_COMPLETION_TYPE=@@COMPLETION_TYPE,COMPLETION_TYPE=0*/;
+DELIMITER /*!*/;
+# at 4
+#140819 13:28:26 server id 1  end_log_pos 107 	Start: binlog v 4, server v 5.5.37-log created 140819 13:28:26 at startup
+# Warning: this binlog is either in use or was not closed properly.
+ROLLBACK/*!*/;
+BINLOG '
+euDyUw8BAAAAZwAAAGsAAAABAAQANS41LjM3LWxvZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAB64PJTEzgNAAgAEgAEBAQEEgAAVAAEGggAAAAICAgCAA==
+'/*!*/;
+# at 107
+#140819 13:35:49 server id 1  end_log_pos 247 	Query	thread_id=5	exec_time=1	error_code=0
+use `test`/*!*/;
+SET TIMESTAMP=1408426549/*!*/;
+SET @@session.pseudo_thread_id=5/*!*/;
+SET @@session.foreign_key_checks=1, @@session.sql_auto_is_null=0, @@session.unique_checks=1, @@session.autocommit=1/*!*/;
+SET @@session.sql_mode=0/*!*/;
+SET @@session.auto_increment_increment=1, @@session.auto_increment_offset=1/*!*/;
+/*!\C utf8 *//*!*/;
+SET @@session.character_set_client=33,@@session.collation_connection=33,@@session.collation_server=8/*!*/;
+SET @@session.lc_time_names=0/*!*/;
+SET @@session.collation_database=DEFAULT/*!*/;
+create table student
+( name varchar(20) not null,
+sex enum('F','M') NOT null)
+/*!*/;
+# at 247
+#140819 13:37:42 server id 1  end_log_pos 315 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1408426662/*!*/;
+BEGIN
+/*!*/;
+# at 315
+#140819 13:37:42 server id 1  end_log_pos 421 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1408426662/*!*/;
+insert into student values ('zhishan', 'F')
+/*!*/;
+# at 421
+#140819 13:37:42 server id 1  end_log_pos 448 	Xid = 26
+COMMIT/*!*/;
+# at 448
+#140819 13:38:15 server id 1  end_log_pos 516 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1408426695/*!*/;
+BEGIN
+/*!*/;
+# at 516
+#140819 13:38:15 server id 1  end_log_pos 620 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1408426695/*!*/;
+insert into student values ('scott', 'M')
+/*!*/;
+# at 620
+#140819 13:38:15 server id 1  end_log_pos 647 	Xid = 27
+COMMIT/*!*/;
+DELIMITER ;
+# End of log file
+ROLLBACK /* added by mysqlbinlog */;
+/*!50003 SET COMPLETION_TYPE=@OLD_COMPLETION_TYPE*/;
+/*!50530 SET @@SESSION.PSEUDO_SLAVE_MODE=0*/;
+
+
+------start log -----
+140822 10:21:03 [Warning] The syntax '--log' is deprecated and will be removed in a future release. Please use '--general-log'/'--general-log-file' instead.
+140822 10:21:03 [Note] Plugin 'FEDERATED' is disabled.
+140822 10:21:03 InnoDB: The InnoDB memory heap is disabled --- how to enable it??
+140822 10:21:03 InnoDB: Mutexes and rw_locks use GCC atomic builtins
+140822 10:21:03 InnoDB: Compressed tables use zlib 1.2.8
+140822 10:21:03 InnoDB: Using Linux native AIO
+140822 10:21:03 InnoDB: Initializing buffer pool, size = 128.0M
+140822 10:21:03 InnoDB: Completed initialization of buffer pool
+140822 10:21:03 InnoDB: highest supported file format is Barracuda.
+140822 10:21:03  InnoDB: Waiting for the background threads to start
+140822 10:21:04 InnoDB: 5.5.37 started; log sequence number 7923693
+^G/usr/libexec/mysqld: File '/var/log/mysql/binlog.000002' not found (Errcode: 13)
+140822 10:21:04 [ERROR] Failed to open log (file '/var/log/mysql/binlog.000002', errno 13)
+140822 10:21:04 [ERROR] Could not open log file
+140822 10:21:04 [ERROR] Can't init tc log
+140822 10:21:04 [ERROR] Aborting
+
+
+执行 lsof -n -i:3306 查看发现mysql监听端口不在
+[zhishan@lakala git]$ free -m
+             total       used       free     shared    buffers     cached
+Mem:          3088       2952        136        277        200       1130
+-/+ buffers/cache:       1620       1467
+Swap:         3215          0       3215
+[zhishan@lakala git]$ man free
+[zhishan@lakala git]$ free -g
+             total       used       free     shared    buffers     cached
+Mem:             3          2          0          0          0          1
+-/+ buffers/cache:          1          1
+Swap:            3          0          3
+
+mysql> show engine innodb status
+| InnoDB |      | 
+=====================================
+140822 11:11:37 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 36 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 1 1_second, 1 sleeps, 0 10_second, 1 background, 1 flush
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 3, signal count 3
+Mutex spin waits 1, rounds 30, OS waits 1
+RW-shared spins 2, rounds 60, OS waits 2
+RW-excl spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 30.00 mutex, 30.00 RW-shared, 0.00 RW-excl
+------------
+TRANSACTIONS
+------------
+Trx id counter 9600
+Purge done for trx's n:o < 9204 undo n:o < 0
+History list length 543
+LIST OF TRANSACTIONS FOR EACH SESSION:
+---TRANSACTION 0, not started
+MySQL thread id 3, OS thread handle 0xa7dffb40, query id 10 localhost root
+show engine innodb status
+--------
+FILE I/O
+--------
+I/O thread 0 state: waiting for completed aio requests (insert buffer thread)
+I/O thread 1 state: waiting for completed aio requests (log thread)
+I/O thread 2 state: waiting for completed aio requests (read thread)
+I/O thread 3 state: waiting for completed aio requests (read thread)
+I/O thread 4 state: waiting for completed aio requests (read thread)
+I/O thread 5 state: waiting for completed aio requests (read thread)
+I/O thread 6 state: waiting for completed aio requests (write thread)
+I/O thread 7 state: waiting for completed aio requests (write thread)
+I/O thread 8 state: waiting for completed aio requests (write thread)
+I/O thread 9 state: waiting for completed aio requests (write thread)
+Pending normal aio reads: 0 [0, 0, 0, 0] , aio writes: 0 [0, 0, 0, 0] ,
+ ibuf aio reads: 0, log i/o's: 0, sync i/o's: 0
+Pending flushes (fsync) log: 0; buffer pool: 0
+431 OS file reads, 3 OS file writes, 3 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 553193, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 7923693
+Log flushed up to   7923693
+Last checkpoint at  7923693
+0 pending log writes, 0 pending chkp writes
+8 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total memory allocated 135987200; in additional pool allocated 0
+Dictionary memory allocated 127036
+Buffer pool size   8191
+Free buffers       7771
+Database pages     420
+Old database pages 0
+Modified db pages  0
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 420, created 0, written 0
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 420, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+1 read views open inside InnoDB
+Main thread process no. 8412, id 2811980608, state: waiting for server activity
+Number of rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+mysql> show variables like 'innodb_log%'
+    -> ;
++---------------------------+---------+
+| Variable_name             | Value   |
++---------------------------+---------+
+| innodb_log_buffer_size    | 8388608 |
+| innodb_log_file_size      | 5242880 |
+| innodb_log_files_in_group | 2       |
+| innodb_log_group_home_dir | ./      |
++---------------------------+---------+
+4 rows in set (0.00 sec)
+
+http://www.itpub.net/thread-1850609-1-1.html
+Above link for the above two logs.
+innodb_log_file_size is 5M by default, and innodb_log_files_in_group is 2 as its default value.
+
+
+Disabling symbloic-links is recommended to prevent assorted security risks
+symbolic-links=0
+max_allowed_packet=1024M
+
+mysql> show variables like 'max%'
+    -> ;
++----------------------------+----------------------+
+| Variable_name              | Value                |
++----------------------------+----------------------+
+| max_allowed_packet         | 1048576              |
+| max_binlog_cache_size      | 18446744073709547520 |
+| max_binlog_size            | 1073741824           |
+| max_binlog_stmt_cache_size | 18446744073709547520 |
+| max_connect_errors         | 10                   |
+| max_connections            | 151                  |
+| max_delayed_threads        | 20                   |
+| max_error_count            | 64                   |
+| max_heap_table_size        | 16777216             |
+| max_insert_delayed_threads | 20                   |
+| max_join_size              | 18446744073709551615 |
+| max_length_for_sort_data   | 1024                 |
+| max_long_data_size         | 1048576              |
+| max_prepared_stmt_count    | 16382                |
+| max_relay_log_size         | 0                    |
+| max_seeks_for_key          | 4294967295           |
+| max_sort_length            | 1024                 |
+| max_sp_recursion_depth     | 0                    |
+| max_tmp_tables             | 32                   |
+| max_user_connections       | 0                    |
+| max_write_lock_count       | 4294967295           |
++----------------------------+----------------------+
+
+
+mysql> show variables like 'slave%'
+    -> ;
++---------------------------+------------+
+| Variable_name             | Value      |
++---------------------------+------------+
+| slave_compressed_protocol | OFF        |
+| slave_exec_mode           | STRICT     |
+| slave_load_tmpdir         | /var/tmp   |
+| slave_max_allowed_packet  | 1073741824 |
+| slave_net_timeout         | 3600       |
+| slave_skip_errors         | OFF        |
+| slave_transaction_retries | 10         |
+| slave_type_conversions    |            |
++---------------------------+------------+
+8 rows in set (0.00 sec)
+
+mysql> show variables like 'log%slave%'
+    -> ;
++-------------------+-------+
+| Variable_name     | Value |
++-------------------+-------+
+| log_slave_updates | OFF   |
++-------------------+-------+
+1 row in set (0.01 sec)
+
+mysql> show master status;
++---------------+----------+--------------+------------------+
+| File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++---------------+----------+--------------+------------------+
+| binlog.000005 |      107 |              |                  |
++---------------+----------+--------------+------------------+
+1 row in set (0.08 sec)
+
+mysql> show slave status;
+Empty set (0.07 sec)
+
+http://www.linuxidc.com/Linux/2012-07/66871.htm
+
+mysql> show variables like 'tmpdir' 临时文件夹
+    -> ;
++---------------+----------+
+| Variable_name | Value    |
++---------------+----------+
+| tmpdir        | /var/tmp |
++---------------+----------+
+1 row in set (0.01 sec)
+
+
+linux shell cmd: chage 
+change user password expiry information
+1. /etc/ssh/sshd_config
+AllowUsers lklsysrun nagios hadoop
+MaxAuthTries 5
+Banner none
+
+------------------------------
+mysql server
+port: 3715
+After modify the port, those log file will not be generated.
+mysql> show variables like '%port%';
++---------------------+-------+
+| Variable_name       | Value |
++---------------------+-------+
+| innodb_support_xa   | ON    |
+| large_files_support | ON    |
+| port                | 3306  |
+| report_host         |       |
+| report_password     |       |
+| report_port         | 3715  |
+| report_user         |       |
++---------------------+-------+
+It seems that report_port should be equals to port.
+
+****root passwd: rem1612
+***replication/rep1626
+*** hive, hive_user/hive
+only connect between hadoop03 and hadoop04
+
+mysql> start slave;
+ERROR 1200: The server is not configured as slave; fix in config file or with CHANGE MASTER TO
+
+It means that the cmd 'start slave' should be excuted on slave host.
+
+Caused by: java.sql.SQLException: Binary logging not possible. Message: Transaction level 'READ-COMMITTED' in InnoDB is not safe for binlog mode 
+'STATEMENT'.
+
+binlog_format=MIXED
+replicate-wild-ignore-table=mysql.%
+replicate-ignore-db=mysql
+Mysql> Show slave status\G; will formate its output, different from show slave status;
+Mysql> ? drop User
+will list its usage.
+on Slave host box,
+Mysql> show variables like '%skip%';
+sql_slave_skip_counter
+
+it will skip the slave sql running error.
+Mysql> set global sql_slave_skip_counter=1; to skip 1 error.
+Until the output of 'show slave status\G;'
+Slave_IO_Running: Yes
+Slave_SQL_Runing: No - to make it Yes when slave backs to work.
+cmds on slave:
+> stop slave
+> start slave
+
+on Master:
+mysql> show variables like '%buffer%';
+innodb_buffer_pool_size 8388608 
+This is 8M
+> show plugins
+binlog ACTIVE  STORAGE ENGINE
+partition ACTIVE STORAGE ENGINE
+CSV ACTIVE STORAGE ENGINE
+
+> status
+
+$ mysql -h remotehostIP -p port -u root -p passwd
+Error 1130: Host 'localhost' is not allowed to connect to this MySQL server(remote)
+
+show slave status;
+Error:
+Fatal error: The slave I/O thread stops because master and slave have equal MySQL server ids; there ids must be different for replication to work
+( or the -replicate-same-server-id option must be on slave but this does not always make sense; please chek the manual before using it);
