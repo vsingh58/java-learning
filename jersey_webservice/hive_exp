@@ -1,0 +1,28 @@
+When I try to follow the such usage:
+1. Start the metastore service of on a DN.
+2. Connect the metastore service on that DN by start the Hive client. 
+
+When I try to do an search, hive always launch a local job. 
+"Job running in-process (local Hadoop)" reported on console.
+
+So I try to figure out it:
+HadoopJobExecHelper.java -> ShimLoader.java -> HadoopShims.java -> Hadoop23Shims.java
+  public boolean isLocalMode(Configuration conf) {
+    return "local".equals(conf.get("mapreduce.framework.name"));
+  }
+
+
+  @Override
+  public void setJobLauncherRpcAddress(Configuration conf, String val) {
+    if (val.equals("local")) {
+      // LocalClientProtocolProvider expects both parameters to be 'local'.
+      conf.set("mapreduce.framework.name", val);
+      conf.set("mapreduce.jobtracker.address", val);
+    }
+    else {
+      conf.set("mapreduce.framework.name", "yarn");
+      conf.set("yarn.resourcemanager.address", val);
+    }
+  }
+
+So, just set the mapreduce.framework.name to "yarn" and yarn.resourcemanager.address are ok.
