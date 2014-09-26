@@ -3,6 +3,7 @@ Source code for 'Mahout in Action' book
 
 http://www.ruanyifeng.com/blog/2013/03/cosine_similarity.html
 http://zh.wikipedia.org/zh-cn/%E9%A4%98%E5%BC%A6%E5%AE%9A%E7%90%86
+http://zh.wikipedia.org/wiki/%E4%BD%99%E5%BC%A6%E7%9B%B8%E4%BC%BC%E6%80%A7
 
 # Installation #
 
