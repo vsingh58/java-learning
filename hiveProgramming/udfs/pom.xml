@@ -61,21 +61,21 @@
         </dependency>
 
     </dependencies>
-   <build>
+   <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.1</version> default is 2.5.1 version
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
-                    <!--<fork>true</fork>-->
-                    <!--<meminitial>128m</meminitial>-->
-                    <!--<maxmem>512m</maxmem>-->
+                    &lt;!&ndash;<fork>true</fork>&ndash;&gt;
+                    &lt;!&ndash;<meminitial>128m</meminitial>&ndash;&gt;
+                    &lt;!&ndash;<maxmem>512m</maxmem>&ndash;&gt;
                 </configuration>
             </plugin>
 </plugins>
-</build>
+</build>-->
 
 </project>

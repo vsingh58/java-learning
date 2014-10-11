@@ -22,6 +22,23 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.1.1</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <directory>${project.basedir}/lib</directory>
+                            <targetPath>WEB-INF/lib</targetPath>
+                            <filtering>false</filtering>
+                            <includes>
+                                <include>**/*.jar</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -33,14 +50,6 @@
                 <version>${jersey.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>test.search</groupId>
-                <artifactId>binarySearch</artifactId>
-                <version>1.0.1</version>
-                <systemPath>/home/zhishan/workspace/git/java-learning/jersey_webservice/tmp/binary_search.jar</systemPath>
-                <!--<systemPath>${basedir}/tmp/binary_search.jar</systemPath>-->
-                <scope>system</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -63,9 +72,14 @@
             <groupId>test.search</groupId>
             <artifactId>binarySearch</artifactId>
             <version>1.0.3</version>
-            <systemPath>/home/zhishan/workspace/git/java-learning/jersey_webservice/tmp/binary_search-1.0.3.jar</systemPath>
-            <!--<systemPath>${basedir}/tmp/binary_search.jar</systemPath>-->
-            <scope>system</scope>
+            <!-- there are two ways to fix out the importing local jar problem.
+            if
+            mvn install:install-file -Dfile=./binary_search-1.0.3.jar -DgroupId=test.search \
+            -DartifactId=binarySearch -Dversion=1.0.3 -Dpackaging=jar
+            is run, go to comment attributes systemPath and scope.-->
+
+            <!--<systemPath>${basedir}/lib/binary_search-1.0.3.jar</systemPath>-->
+            <!--<scope>system</scope>-->
         </dependency>
     </dependencies>
     <properties>

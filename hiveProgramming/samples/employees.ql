@@ -1,5 +1,5 @@
 --delete an table
---DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS employees;
 
 -- create table;
 CREATE TABLE IF NOT EXISTS employees (

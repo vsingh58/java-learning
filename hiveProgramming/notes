@@ -9,3 +9,20 @@ Written using the octal code \002 when explicitly specified in CREATE TABLE
 statements.
 ^C Separate the key from the corresponding value in MAP key-value pairs. Written using the octal code \003 when explicitly specified in CREATE TABLE statment.
 
+2.
+P106
+
+set
+set hive.auto.convert.join=true;
+hive.mapjoin.smalltable.filesize=25000000
+ 
+
+
+3. P135 
+Optimized Joins
+We discussed optimizing join performance in “Join Optimizations” on page 100 and
+“Map-side Joins” on page 105. We won’t reproduce the details here, but just remind
+yourself that it’s important to know which table is the largest and put it last in the
+JOIN clause, or use the /* streamtable(table_name) */ directive.
+
+Hive does not support the optimization for right- and full-outer joins.
